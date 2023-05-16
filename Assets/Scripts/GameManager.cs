@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     // instance
     public static GameManager instance;
 
+    private AudioSource CorrectSoundEffect;
+
+
     void Awake ()
     {
         // set instance to this script.
@@ -25,6 +28,7 @@ public class GameManager : MonoBehaviour
     {
         // set the initial problem
         SetProblem(0);
+        CorrectSoundEffect = GetComponent<AudioSource>();
     }
 
     void Update ()
@@ -53,7 +57,10 @@ public class GameManager : MonoBehaviour
     {
         // is this the last problem?
         if(problems.Length - 1 == curProblem)
+        {
             Win();
+            CorrectSoundEffect.Play();
+        }
         else
             SetProblem(curProblem + 1);
     }
