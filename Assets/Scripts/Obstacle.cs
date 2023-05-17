@@ -6,12 +6,14 @@ public class Obstacle : MonoBehaviour
 {
     public Vector3 moveDir;         // direction to move in
     public float moveSpeed;         // speed to move at along moveDir
+    [SerializeField] private AudioSource cannonSound;
 
     private float aliveTime = 8.0f; // time before object is destroyed
 
     void Start()
     {
         Destroy(gameObject, aliveTime);
+        cannonSound.Play();
     }
 
     void Update()

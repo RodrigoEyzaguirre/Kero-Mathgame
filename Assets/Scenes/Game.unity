@@ -371,18 +371,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58161155}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2111639952}
-  m_Father: {fileID: 1276514998}
-  m_RootOrder: 8
+  m_Father: {fileID: 1086194149}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -50, y: -30}
+  m_AnchoredPosition: {x: -18.735107, y: -18.234985}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58161157
@@ -1019,7 +1019,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291205182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.15, z: 0}
+  m_LocalPosition: {x: 0, y: -4.122, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1045,7 +1045,6 @@ MonoBehaviour:
   grounded: 0
   stunDuration: 2
   rig: {fileID: 291205187}
-  collider: {fileID: 0}
   anim: {fileID: 291205186}
   wingflap: {fileID: 291205189}
 --- !u!95 &291205186
@@ -1103,8 +1102,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.030875772, y: 0.0010857582}
-  m_Size: {x: 0.7058918, y: 0.9515486}
+  m_Offset: {x: -0.030875772, y: 0.017082453}
+  m_Size: {x: 0.7058918, y: 0.9195552}
   m_Direction: 0
 --- !u!82 &291205189
 AudioSource:
@@ -1113,14 +1112,14 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291205182}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 572adbaca3c2d994694d634d0a0bcff5, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
+  m_PlayOnAwake: 1
+  m_Volume: 0.8
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1130,7 +1129,7 @@ AudioSource:
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 0
+  BypassEffects: 1
   BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
@@ -2687,16 +2686,17 @@ RectTransform:
   m_GameObject: {fileID: 1086194148}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 58161156}
   m_Father: {fileID: 1276514998}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 424.5504, y: 237.05466}
-  m_SizeDelta: {x: -919.10077, y: -504.1093}
+  m_AnchoredPosition: {x: 909.27, y: 509.95}
+  m_SizeDelta: {x: -1881.07, y: -1043.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1086194150
 MonoBehaviour:
@@ -3041,7 +3041,6 @@ RectTransform:
   - {fileID: 542440342}
   - {fileID: 790859644}
   - {fileID: 1086194149}
-  - {fileID: 58161156}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

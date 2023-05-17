@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
 
     // components
     public Rigidbody2D rig;                 // Rigidbody2D component
-    public Collider2D collider;
     public Animator anim;                   // Animator component
 
     [SerializeField] private AudioSource wingflap;
@@ -24,33 +23,28 @@ public class PlayerController : MonoBehaviour
     {
         grounded = IsGrounded();
         CheckInputs();
-
         // is the player stunned?
         if(curState == PlayerState.Stunned)
-        {
             // has the player been stunned for the duration?
             if(Time.time - stunStartTime >= stunDuration)
-            {
-                curState = PlayerState.Idle;
-            }
-        }
-
-        if (Input.GetKey(KeyCode.UpArrow))
-            wingflap.Play();
+                curState = PlayerState.Idle;     
     }
 
     // checks for user input to control player
     void CheckInputs ()
     {
         if (curState != PlayerState.Stunned)
-        {
-            // movement
             Move();
-            // flying
-            if (Input.GetKey(KeyCode.UpArrow))
-                Fly();
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            Fly();
+            wingflap.enabled = true;
         }
-
+        else
+        {
+            if(grounded)
+                wingflap.enabled = false;
+        }        
         // update our current state
         SetState();
     }
@@ -95,11 +89,8 @@ public class PlayerController : MonoBehaviour
     // adds force upwards to player
     void Fly()
     {
-        wingflap.Play();
         // add force upwards
         rig.AddForce(Vector2.up * flyingSpeed, ForceMode2D.Impulse);
-          
-    
     }
 
     // called when the player gets stunned
@@ -114,21 +105,15 @@ public class PlayerController : MonoBehaviour
     bool IsGrounded ()
     {
         // shoot a raycast down underneath the player
-        //RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 0.35f), Vector2.down, 0.1f);
-
-        collider = GetComponent<Collider2D>();
+        RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 0.5f), Vector2.down, 0.1f);
 
         // did we hit anything?
-        if(collider != null)
+        if(hit.collider != null)
         {
             // was it the floor?
-            if(collider.CompareTag("Floor"))
-            {
-                print("grounded");
+            if(hit.collider.CompareTag("Floor"))
                 return true;
-            }
         }
-
         return false;
     }
 
