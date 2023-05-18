@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public Animator anim;                   // Animator component
 
     [SerializeField] private AudioSource wingflap;
+    [SerializeField] private AudioSource deadSound;
 
     void FixedUpdate ()
     {
@@ -34,17 +35,21 @@ public class PlayerController : MonoBehaviour
     void CheckInputs ()
     {
         if (curState != PlayerState.Stunned)
-            Move();
-        if (Input.GetKey(KeyCode.UpArrow))
         {
-            Fly();
-            wingflap.enabled = true;
+            Move();
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                Fly();
+                wingflap.enabled = true;
+            }
+            else
+            {
+                if(grounded)
+                    wingflap.enabled = false;
+            }
         }
         else
-        {
-            if(grounded)
-                wingflap.enabled = false;
-        }        
+            wingflap.enabled = false;
         // update our current state
         SetState();
     }
@@ -99,6 +104,7 @@ public class PlayerController : MonoBehaviour
         curState = PlayerState.Stunned;
         rig.velocity = Vector2.down * 3;
         stunStartTime = Time.time;
+        deadSound.Play();
     }
 
     // returns true if player is on ground, false otherwise
