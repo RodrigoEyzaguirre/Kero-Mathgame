@@ -74,10 +74,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -92195719
+  m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -210815671, guid: 25f198783a215cf418e382d5e232192a, type: 3}
+  m_Sprite: {fileID: 389270262, guid: 20cfc702ac82bf448bbbddd20eaf5680, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 7109052137862727324}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 882b07af77a66a9469f51bbb03eed3b9, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8f2b3271b40013b46a5082d2dcbc1b6b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

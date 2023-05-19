@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     // instance
     public static GameManager instance;
 
-    private AudioSource CorrectSoundEffect;
+    public AudioSource CorrectSoundEffect;
 
 
     void Awake ()
@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     {
         // set the initial problem
         SetProblem(0);
-        CorrectSoundEffect = GetComponent<AudioSource>();
+        //CorrectSoundEffect = GetComponent<AudioSource>();
     }
 
     void Update ()
@@ -55,11 +55,11 @@ public class GameManager : MonoBehaviour
     // called when the player enters the correct tube
     void CorrectAnswer()
     {
+        CorrectSoundEffect.Play();
         // is this the last problem?
-        if(problems.Length - 1 == curProblem)
+        if (problems.Length - 1 == curProblem)
         {
             Win();
-            CorrectSoundEffect.Play();
         }
         else
             SetProblem(curProblem + 1);
