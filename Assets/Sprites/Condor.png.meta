@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c865aad9a27d50b43b06faedc24619d1
+guid: afd05e7b2aeb3da4dbfed969b99d1bb0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 130
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,148 +117,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Condor Sprite_0
+      name: Condor_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 14
-        height: 16
+        y: 1
+        width: 121
+        height: 159
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47372cf389b68ce41b25fea6d6af5c69
-      internalID: -23822028
+      spriteID: 3e4d6826be5cc634bb4e4232c8c94671
+      internalID: 1378977943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Condor Sprite_1
+      name: Condor_1
       rect:
         serializedVersion: 2
-        x: 14
+        x: 140
         y: 0
-        width: 14
-        height: 16
+        width: 121
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbf87e1e0f53e064693170c6f8875cbb
-      internalID: 910447592
+      spriteID: d3b1ae02355643f4197e2fbd4f491a0c
+      internalID: 1960587715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Condor Sprite_2
+      name: Condor_2
       rect:
         serializedVersion: 2
-        x: 28
+        x: 280
         y: 0
-        width: 14
-        height: 16
+        width: 121
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c09f41f0d70825d4b9ce50a95892ac9a
-      internalID: -1979339653
+      spriteID: 9fab3762de78b744cadfdf846f30ef73
+      internalID: -1369997502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Condor Sprite_3
+      name: Condor_3
       rect:
         serializedVersion: 2
-        x: 42
+        x: 420
         y: 0
-        width: 14
-        height: 16
+        width: 132
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c721003f57a64048be01880771c26ea
-      internalID: -510835690
+      spriteID: 52d5b68dfe00a8b4ca863f4d9646c41b
+      internalID: -225378117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Condor Sprite_4
+      name: Condor_4
       rect:
         serializedVersion: 2
-        x: 56
+        x: 560
         y: 0
-        width: 14
-        height: 16
+        width: 140
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2f39b52fdfc29946a5e5a9af6482204
-      internalID: -1116725299
+      spriteID: 98dbcba08d915f64698bc8ae63790680
+      internalID: 853415653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Condor Sprite_5
+      name: Condor_5
       rect:
         serializedVersion: 2
-        x: 70
+        x: 708
         y: 0
-        width: 14
-        height: 16
+        width: 123
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4facf18cb5bad6245a5f8ad5a611d9ba
-      internalID: -1167894924
+      spriteID: 6d9ac1ef653c23c4b9df5afc8a47b0a3
+      internalID: 2058728191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Condor Sprite_6
+      name: Condor_6
       rect:
         serializedVersion: 2
-        x: 84
+        x: 840
         y: 0
-        width: 14
-        height: 16
+        width: 131
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eef0742fbfb8f24cac44a67b38f599e
-      internalID: 91435011
+      spriteID: b25caba968df3824ba1094f74f4dc787
+      internalID: 2041356498
       vertices: []
       indices: 
       edges: []
@@ -274,13 +274,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Condor Sprite_0: -23822028
-      Condor Sprite_1: 910447592
-      Condor Sprite_2: -1979339653
-      Condor Sprite_3: -510835690
-      Condor Sprite_4: -1116725299
-      Condor Sprite_5: -1167894924
-      Condor Sprite_6: 91435011
+      Condor_0: 1378977943
+      Condor_1: 1960587715
+      Condor_2: -1369997502
+      Condor_3: -225378117
+      Condor_4: 853415653
+      Condor_5: 2058728191
+      Condor_6: 2041356498
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
