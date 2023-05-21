@@ -26,4 +26,23 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(sceneToLoad);
     }
 
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+    }
+    public void QuitGame()
+    {
+        Time.timeScale = 1;
+        StartCoroutine(WaitQuit());
+    }
+    IEnumerator WaitQuit()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("Start");
+    }
+
 }
