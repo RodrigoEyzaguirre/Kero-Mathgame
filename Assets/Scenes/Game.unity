@@ -4337,7 +4337,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 326978686}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 3
+  m_MaxValue: 9
   m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
@@ -6516,22 +6516,76 @@ MonoBehaviour:
     correctTube: 1
   - firstNumber: 6
     secondNumber: 13
-    operation: 2
+    operation: 0
+    answers:
+    - 14
+    - 18
+    - 19
+    - 21
+    correctTube: 2
+  - firstNumber: 22
+    secondNumber: 8
+    operation: 0
+    answers:
+    - 25
+    - 30
+    - 32
+    - 34
+    correctTube: 1
+  - firstNumber: 48
+    secondNumber: 8
+    operation: 0
+    answers:
+    - 56
+    - 46
+    - 40
+    - 58
+    correctTube: 0
+  - firstNumber: 27
+    secondNumber: 5
+    operation: 0
+    answers:
+    - 33
+    - 45
+    - 32
+    - 22
+    correctTube: 2
+  - firstNumber: 7
+    secondNumber: 13
+    operation: 0
+    answers:
+    - 30
+    - 19
+    - 20
+    - 21
+    correctTube: 2
+  - firstNumber: 63
+    secondNumber: 8
+    operation: 0
     answers:
     - 72
-    - 84
     - 91
-    - 78
+    - 83
+    - 71
     correctTube: 3
-  - firstNumber: 60
-    secondNumber: 3
-    operation: 3
+  - firstNumber: 6
+    secondNumber: 56
+    operation: 0
     answers:
-    - 20
-    - 30
-    - 15
-    - 25
+    - 62
+    - 58
+    - 64
+    - 72
     correctTube: 0
+  - firstNumber: 58
+    secondNumber: 19
+    operation: 0
+    answers:
+    - 75
+    - 77
+    - 81
+    - 74
+    correctTube: 1
   curProblem: 0
   player: {fileID: 291205185}
   slider: {fileID: 1199397219}
