@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     //public float remainingTime;     // time remaining for the current problem
 
     public PlayerController player; // player object
+    public SliderController slider;
 
     // instance
     public static GameManager instance;
@@ -48,7 +49,10 @@ public class GameManager : MonoBehaviour
     {
         // did they enter the correct tube?
         if (tube == problems[curProblem].correctTube)
+        {
             CorrectAnswer();
+            slider.UpdateProgress();
+        }
         else
             IncorrectAnswer();
     }
@@ -57,6 +61,7 @@ public class GameManager : MonoBehaviour
     void CorrectAnswer()
     {
         CorrectSoundEffect.Play();
+        
         // is this the last problem?
         if (problems.Length - 1 == curProblem)
         {
@@ -83,16 +88,15 @@ public class GameManager : MonoBehaviour
     // called when the player answers all the problems
     public void Win ()
     {
-        Time.timeScale = 0;
         sceneManager.WinGame();
         //UI.instance.SetEndText(true);
-
     }
 
     // called if the remaining time on a problem reaches 0
     public void Lose ()
     {
         Time.timeScale = 0;
-        UI.instance.SetEndText(false);
+        //Rigidbody rb = player.GetComponet
+        UI.instance.SetEndText();
     }
 }

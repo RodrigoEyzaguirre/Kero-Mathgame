@@ -13,7 +13,8 @@ public class UI : MonoBehaviour
     //public Image remainingTimeDial;         // remaining time image with radial fill
     //private float remainingTimeDialRate;    // 1.0 / time per problem
 
-    public Text endText;                    // text displayed a the end of the game (win or game over)
+    public GameObject loseMenu;
+    public TMP_Text[] endTexts;                    // text displayed a the end of the game (win or game over)
 
     // instance
     public static UI instance;
@@ -30,6 +31,11 @@ public class UI : MonoBehaviour
         // used to convert the time per problem (8 secs for example)
         // and converts that to be used on a 0.0 - 1.0 scale
         //remainingTimeDialRate = 1.0f / GameManager.instance.timePerProblem;
+        loseMenu.SetActive(false);
+        for (int index = 0; index < endTexts.Length; ++index)
+        {
+            endTexts[index].enabled = false;
+        }
     }
 
     void Update ()
@@ -63,22 +69,10 @@ public class UI : MonoBehaviour
     }
 
     // sets the end text to display if the player won or lost
-    public void SetEndText (bool win)
+    public void SetEndText ()
     {
-        // enable the end text object
-        endText.gameObject.SetActive(true);
-
-        // did the player win?
-        if (win)
-        {
-            endText.text = "You Win!";
-            endText.color = Color.green;
-        }
-        // did the player lose?
-        else
-        {
-            endText.text = "Game Over!";
-            endText.color = Color.red;
-        }
+        loseMenu.SetActive(true);
+        int index = Random.Range(0, endTexts.Length);
+        endTexts[index].enabled = true;
     }
 }

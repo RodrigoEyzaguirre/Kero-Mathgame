@@ -755,6 +755,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 128513707796689276, guid: c588a0adad6e28c46a0c4cd25280783b,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0da35bf8a002f764e8506eb0763a71d8, type: 3}
     - target: {fileID: 4678489527727419654, guid: c588a0adad6e28c46a0c4cd25280783b,
         type: 3}
       propertyPath: m_RootOrder
@@ -814,6 +819,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SoundManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597229095843137347, guid: c588a0adad6e28c46a0c4cd25280783b,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725171149488386302, guid: c588a0adad6e28c46a0c4cd25280783b,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725171149488386302, guid: c588a0adad6e28c46a0c4cd25280783b,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c588a0adad6e28c46a0c4cd25280783b, type: 3}

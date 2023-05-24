@@ -14,6 +14,7 @@ public class PlayerLife : MonoBehaviour {
 	int currentHP;
 
 	public GameManager gameManager;
+	public AudioSource wingFlap;
 
 	void Start () {
 		hurt = false;
@@ -43,7 +44,7 @@ public class PlayerLife : MonoBehaviour {
 
 	void Kill () {
 		if (!dead) {
-			//controller.enabled=false;
+			wingFlap.enabled = false;
 			for (int i=currentHP-1; i>=0; i--) 
 				heart[i].SetActive(false);
 			currentHP = 0;
