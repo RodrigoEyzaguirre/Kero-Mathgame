@@ -7,7 +7,7 @@ using TMPro;
 public class UI : MonoBehaviour
 {
     public TMP_Text[] answersTexts; 
-    public Text problemText;                // text that displays the maths problem
+    public TMP_Text problemText;                // text that displays the maths problem
     //public Text[] answersTexts;             // array of the 4 answers texts
 
     //public Image remainingTimeDial;         // remaining time image with radial fill
