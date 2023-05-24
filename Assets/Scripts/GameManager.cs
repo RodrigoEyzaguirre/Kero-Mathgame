@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     // instance
     public static GameManager instance;
+    public LevelManager sceneManager;
 
     public AudioSource CorrectSoundEffect;
 
@@ -80,17 +81,18 @@ public class GameManager : MonoBehaviour
     }
 
     // called when the player answers all the problems
-    void Win ()
+    public void Win ()
     {
-        //Time.timeScale = 0.0f;
-        UI.instance.SetEndText(true);
+        Time.timeScale = 0;
+        sceneManager.WinGame();
+        //UI.instance.SetEndText(true);
 
     }
 
     // called if the remaining time on a problem reaches 0
-    void Lose ()
+    public void Lose ()
     {
-        //Time.timeScale = 0.0f;
+        Time.timeScale = 0;
         UI.instance.SetEndText(false);
     }
 }

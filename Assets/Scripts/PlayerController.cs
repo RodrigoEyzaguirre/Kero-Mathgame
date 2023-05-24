@@ -20,6 +20,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioSource wingflap;
     [SerializeField] private AudioSource deadSound;
 
+    PlayerLife playerLife;
+
+    private void Start()
+    {
+        playerLife = GetComponent<PlayerLife>();
+    }
+
     void FixedUpdate ()
     {
         grounded = IsGrounded();
@@ -105,6 +112,7 @@ public class PlayerController : MonoBehaviour
         rig.velocity = Vector2.down * 3;
         stunStartTime = Time.time;
         deadSound.Play();
+        playerLife.Hurt();
     }
 
     // returns true if player is on ground, false otherwise
