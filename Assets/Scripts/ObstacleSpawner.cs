@@ -37,6 +37,7 @@ public class ObstacleSpawner : MonoBehaviour
             lastSpawn = Time.time;
             SpawnObstacle();
         }
+
     }
 
     // spawns a random obstacle at a random spawn point

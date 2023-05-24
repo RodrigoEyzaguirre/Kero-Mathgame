@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     // instance
     public static GameManager instance;
     public LevelManager sceneManager;
+    public ObstacleSpawner obstacleSpawner;
 
     public AudioSource CorrectSoundEffect;
 
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
     {
         // set the initial problem
         SetProblem(0);
+        obstacleSpawner = GetComponent<ObstacleSpawner>();
         //CorrectSoundEffect = GetComponent<AudioSource>();
     }
 
@@ -80,6 +82,7 @@ public class GameManager : MonoBehaviour
     // sets the current problem
     void SetProblem (int problem)
     {
+        obstacleSpawner.spawnRate = obstacleSpawner.spawnRate - 0.1f;
         curProblem = problem;
         UI.instance.SetProblemText(problems[curProblem]);
         //remainingTime = timePerProblem;

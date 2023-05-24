@@ -4275,7 +4275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 40.800003}
+  m_AnchoredPosition: {x: 0, y: 40.799988}
   m_SizeDelta: {x: 1000, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1199397219
@@ -4337,7 +4337,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 326978686}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 9
+  m_MaxValue: 10
   m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
@@ -6475,7 +6475,7 @@ MonoBehaviour:
   - {fileID: 7109052137862727324, guid: 4b4418e2f3e771b4e85cc9e975eee808, type: 3}
   minSpawnY: -1.3
   maxSpawnY: 1.6
-  spawnRate: 3.2
+  spawnRate: 3
   isComingFromRight: 0
 --- !u!4 &1797280315
 Transform:
@@ -6532,64 +6532,74 @@ MonoBehaviour:
     - 32
     - 34
     correctTube: 1
-  - firstNumber: 48
-    secondNumber: 8
-    operation: 0
+  - firstNumber: 47
+    secondNumber: 11
+    operation: 1
     answers:
-    - 56
-    - 46
-    - 40
-    - 58
-    correctTube: 0
-  - firstNumber: 27
-    secondNumber: 5
-    operation: 0
-    answers:
-    - 33
-    - 45
-    - 32
-    - 22
-    correctTube: 2
-  - firstNumber: 7
-    secondNumber: 13
-    operation: 0
-    answers:
-    - 30
-    - 19
-    - 20
-    - 21
-    correctTube: 2
-  - firstNumber: 63
-    secondNumber: 8
-    operation: 0
-    answers:
-    - 72
-    - 91
-    - 83
-    - 71
-    correctTube: 3
-  - firstNumber: 6
-    secondNumber: 56
-    operation: 0
-    answers:
-    - 62
-    - 58
-    - 64
-    - 72
-    correctTube: 0
-  - firstNumber: 58
-    secondNumber: 19
-    operation: 0
-    answers:
-    - 75
-    - 77
-    - 81
-    - 74
+    - 37
+    - 36
+    - 29
+    - 35
     correctTube: 1
+  - firstNumber: 6
+    secondNumber: 5
+    operation: 2
+    answers:
+    - 20
+    - 30
+    - 40
+    - 50
+    correctTube: 1
+  - firstNumber: 2
+    secondNumber: 5
+    operation: 2
+    answers:
+    - 10
+    - 20
+    - 25
+    - 30
+    correctTube: 0
+  - firstNumber: 6
+    secondNumber: 4
+    operation: 2
+    answers:
+    - 10
+    - 26
+    - 31
+    - 24
+    correctTube: 3
+  - firstNumber: 25
+    secondNumber: 5
+    operation: 3
+    answers:
+    - 10
+    - 15
+    - 5
+    - 0
+    correctTube: 2
+  - firstNumber: 16
+    secondNumber: 4
+    operation: 3
+    answers:
+    - 5
+    - 3
+    - 7
+    - 4
+    correctTube: 3
+  - firstNumber: 27
+    secondNumber: 3
+    operation: 3
+    answers:
+    - 9
+    - 7
+    - 8
+    - 6
+    correctTube: 0
   curProblem: 0
   player: {fileID: 291205185}
   slider: {fileID: 1199397219}
   sceneManager: {fileID: 214814830}
+  obstacleSpawner: {fileID: 1797280314}
   CorrectSoundEffect: {fileID: 1997577743}
 --- !u!114 &1797280317
 MonoBehaviour:
